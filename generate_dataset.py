@@ -1,5 +1,7 @@
-import numpy as np
 import random
+
+import numpy as np
+
 
 def check_class(student, w, frontiers_list, lambdou):
     """
@@ -49,6 +51,7 @@ def generate_dataset(students_count, subjects_count, classes_count, verbose=1):
     :param students_count: {int} Nombre d'étudiants
     :param subjects_count: {int} Nombre de matières
     :param classes_count:  {int} Nombre de classes (ex: 2 pour {Accepté, Refusé})
+    :param verbose: {int} Niveau de débogage (1: debug, 0: pas de debug)
     :return: {list(np.array()[]} Liste de classes_count matrices de notes
     """
 
