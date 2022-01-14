@@ -24,6 +24,7 @@ Ce répertoire GIT suit la structure suivante:
 ```dir
 │   generate_dataset.py
 │   part1_gurobi_2_criteres.ipynb
+|   part2_sat.ipynb
 │   README.md
 │
 └───graphs
@@ -36,6 +37,8 @@ Ce répertoire GIT suit la structure suivante:
 `generate_dataset.py` Contient des fonctions de génération et de manipulation des datasets.
 
 `part1_gurobi_2_criteres.ipynb` Résolution et évaluation des performance d'un modèle MR-Sort.
+
+`part2_sat.ipynb` Résolution d'un modèle NCS.
 
 `/graphs` Stockage statique des graphes.
 
