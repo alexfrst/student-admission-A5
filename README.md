@@ -5,7 +5,7 @@
 - FORESTIER Alexandre
 - SENEJKO Morgane
 
-**Sujet :**
+# Sujet :
 
 L'objectif du projet est de comparer deux solveurs d'optimisation sur le thème d'admissions d'étudiants.
 
@@ -15,11 +15,52 @@ La première partie du projet est l'implémentation du Inv-MR-Sort à l'aide d'u
 La deuxième partie est l'implémentation du Inv-NCS à l'aide d'un solveur SAT (Gophersat).
 
 
-**Structure des fichiers :**
+# Structure du projet :
 
-Pour la première partie : le notebook final se nomme part1_gurobi_k_criteres.ipynb.
+## Structure des fichiers
 
-**Modules à importer :**
+Ce répertoire GIT suit la structure suivante:
+
+```dir
+│   generate_dataset.py
+│   part1_gurobi_2_criteres.ipynb
+│   README.md
+│
+└───graphs
+        gurobi_duration_students.png
+        gurobi_duration_subjects.png
+        gurobi_perf_students.png
+        gurobi_perf_subjects.png
+```
+
+`generate_dataset.py` Contient des fonctions de génération et de manipulation des datasets.
+
+`part1_gurobi_2_criteres.ipynb` Résolution et évaluation des performance d'un modèle MR-Sort.
+
+`/graphs` Stockage statique des graphes.
+
+
+## Modules utilisés
 
 - gurobipy
 - numpy
+- plotly (Dataviz)
+- kaleido (Export statique des graphes)
+
+#Résultats MR-Sort 
+
+<table>
+    <tbody>
+        <tr>
+            <td><img src="graphs/gurobi_duration_students.png"></td>
+            <td><img src="graphs/gurobi_perf_students.png"></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td><img src="graphs/gurobi_duration_subjects.png"></td>
+            <td><img src="graphs/gurobi_perf_subjects.png"></td>
+        </tr>
+    </tbody>
+</table>
+
