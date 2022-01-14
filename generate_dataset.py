@@ -95,7 +95,4 @@ def generate_dataset(students_count, subjects_count, classes_count, verbose=1):
         print("\nLes classes des élèves :")
         print(y)
 
-    # On veut retourner une matrice par classe
-    # Si 2 classes A et R : A contient les notes des élèves qui sont admis et R les notes des élèves refusés
-
     return S, y
