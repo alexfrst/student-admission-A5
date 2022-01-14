@@ -41,9 +41,9 @@ Ce répertoire GIT suit la structure suivante:
 
 `generate_dataset.py` Contient des fonctions de génération et de manipulation des datasets.
 
-`part1_gurobi_2_criteres.ipynb` Résolution et évaluation des performance d'un modèle MR-Sort.
+`part1_gurobi_2_criteres.ipynb` Résolution et évaluation des performance d'un modèle MR-Sort. Vous pouvez exécuter le notebook entier, la dernière partie est assez longue car elle calcule les performances du modèle sur divers datasets.
 
-`part2_sat.ipynb` Résolution d'un modèle NCS.
+`part2_sat.ipynb` Résolution d'un modèle NCS. Vous pouvez exécuter le notebook entier.
 
 `/graphs` Stockage statique des graphes.
 
