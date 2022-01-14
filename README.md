@@ -47,7 +47,7 @@ Ce répertoire GIT suit la structure suivante:
 - plotly (Dataviz)
 - kaleido (Export statique des graphes)
 
-#Résultats MR-Sort 
+# Résultats MR-Sort 
 
 <table>
     <tbody>
