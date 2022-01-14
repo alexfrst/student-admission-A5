@@ -24,8 +24,11 @@ Ce répertoire GIT suit la structure suivante:
 ```dir
 │   generate_dataset.py
 │   part1_gurobi_2_criteres.ipynb
-|   part2_sat.ipynb
+│   part2_sat.ipynb
 │   README.md
+│
+├───gophersat
+│       gophersat-1.1.6.exe
 │
 └───graphs
         gurobi_duration_students.png
@@ -33,6 +36,8 @@ Ce répertoire GIT suit la structure suivante:
         gurobi_perf_students.png
         gurobi_perf_subjects.png
 ```
+
+**`./gophersat/gophersat-1.1.6.exe` is where the gophersat solver is located**
 
 `generate_dataset.py` Contient des fonctions de génération et de manipulation des datasets.
 
