@@ -37,15 +37,15 @@ Ce répertoire GIT suit la structure suivante:
 
 `generate_dataset.py` Contient des fonctions de génération et de manipulation des datasets.
 
-`part1_gurobi_2_criteres.ipynb` Résolution et évaluation des performance d'un modèle MR-Sort. Vous pouvez exécuter le notebook entier, la dernière partie est assez longue car elle calcule les performances du modèle sur divers datasets.
+`part1_gurobi_2_criteres.ipynb` Résolution et évaluation des performance d'un modèle Inv-MR-Sort. Vous pouvez exécuter le notebook entier, la dernière partie est assez longue car elle calcule les performances du modèle sur divers datasets.
 
-`part2_sat_k_classes.py` Résolution du problème avec modèle NCS à l'aide d'une formulation SAT.
+`part2_sat_k_classes.py` Résolution du problème avec modèle Inv-NCS à l'aide d'une formulation SAT.
 
-`sat_solver_evaluation.ipynb` Evaluation du modèle NCS avec formulation SAT.
+`sat_solver_evaluation.ipynb` Evaluation du modèle Inv-NCS avec formulation SAT.
 
-`part2_maxsat_k_classes.py` Résolution du problème avec modèle NCS à l'aide d'une formulation MaxSAT.
+`part2_maxsat_k_classes.py` Résolution du problème avec modèle Inv-NCS à l'aide d'une formulation MaxSAT.
 
-`maxsat_solver_evaluation.ipynb` Evaluation du modèle NCS avec formulation MaxSAT.
+`maxsat_solver_evaluation.ipynb` Evaluation du modèle Inv-NCS avec formulation MaxSAT.
 
 `/graphs` Stockage statique des graphes.
 
@@ -59,7 +59,7 @@ Ce répertoire GIT suit la structure suivante:
 - sklearn (Calcul des matrices de confusion)
 - numpy
 
-# Résultats MR-Sort 
+# Résultats Inv-MR-Sort 
 
 | Parameter      | Duration                                 | Performance                          |
 |----------------|------------------------------------------|--------------------------------------|
@@ -75,7 +75,7 @@ Ce répertoire GIT suit la structure suivante:
 | Students count | ![](graphs/sat_duration_students.png) | ![](graphs/sat_perf_students.png) |
 | Subjects count | ![](graphs/sat_duration_subjects.png) | ![](graphs/sat_perf_subjects.png) |
 
-# Sensibilité au bruit des modèles Inv-NCS et MR-SORT
+# Sensibilité au bruit des modèles Inv-NCS et Inv-MR-Sort
 
 | Solveur MR-Sort                   | Solveur SAT                       |
 |-----------------------------------|-----------------------------------|
