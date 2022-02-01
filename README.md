@@ -57,18 +57,29 @@ Ce répertoire GIT suit la structure suivante:
 
 # Résultats MR-Sort 
 
-<table>
-    <tbody>
-        <tr>
-            <td><img src="graphs/gurobi_duration_students.png"></td>
-            <td><img src="graphs/gurobi_perf_students.png"></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <td><img src="graphs/gurobi_duration_subjects.png"></td>
-            <td><img src="graphs/gurobi_perf_subjects.png"></td>
-        </tr>
-    </tbody>
-</table>
+| Parameter      | Duration                                 | Performance                          |
+|----------------|------------------------------------------|--------------------------------------|
+| Students count | ![](graphs/gurobi_duration_students.png) | ![](graphs/gurobi_perf_students.png) |
+| Subjects count | ![](graphs/gurobi_duration_subjects.png) | ![](graphs/gurobi_perf_subjects.png) |
 
+
+
+# Résultats Solveur-Sat
+
+| Parameter      | Duration                              | Performance                       |
+|----------------|---------------------------------------|-----------------------------------|
+| Students count | ![](graphs/sat_duration_students.png) | ![](graphs/sat_perf_students.png) |
+| Subjects count | ![](graphs/sat_duration_subjects.png) | ![](graphs/sat_perf_subjects.png) |
+
+# Sensibilité au bruit
+
+| Solveur MR-Sort                   | Solveur SAT                       |
+|-----------------------------------|-----------------------------------|
+| ![](graphs/gurobi_perf_noise.png) | ![](graphs/sat_perf_noise.png)    |
+
+
+# Solveur Maxat
+
+| Nombre de variables ignorée          | Performance                       |
+|--------------------------------------|-----------------------------------|
+| ![](graphs/maxsat_ignored_noise.png) | ![](graphs/maxsat_perf_noise.png) |
