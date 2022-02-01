@@ -219,7 +219,7 @@ class MaxSatSolver():
 
     # Attention à utiliser la vesion du solveur compatible avec votre système d'exploitation, mettre le solveur dans le même dossier que ce notebook
 
-    def _solve(self, clauses, variables, i2variables, filename, cmd="./gophersat.exe"):
+    def _solve(self, clauses, variables, i2variables, filename, cmd="./gophersat/gophersat-1.1.6.exe"):
         """
         Résoud le problème formalisé avec les clauses précédentes .
         @param clauses: {List(clauses_struct,clauses_dataset)} Clauses générées précedemment.
