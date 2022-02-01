@@ -68,21 +68,21 @@ Ce répertoire GIT suit la structure suivante:
 
 
 
-# Résultats NCS
+# Résultats Inv-NCS
 
 | Parameter      | Duration                              | Performance                       |
 |----------------|---------------------------------------|-----------------------------------|
 | Students count | ![](graphs/sat_duration_students.png) | ![](graphs/sat_perf_students.png) |
 | Subjects count | ![](graphs/sat_duration_subjects.png) | ![](graphs/sat_perf_subjects.png) |
 
-# Sensibilité au bruit des modèles NCS et MR-SORT
+# Sensibilité au bruit des modèles Inv-NCS et MR-SORT
 
 | Solveur MR-Sort                   | Solveur SAT                       |
 |-----------------------------------|-----------------------------------|
 | ![](graphs/gurobi_perf_noise.png) | ![](graphs/sat_perf_noise.png)    |
 
 
-# Modèle NCS avec solveur MaxSat
+# Modèle Inv-NCS avec formulation MaxSat
 
 | Nombre de variables ignorée          | Performance                       |
 |--------------------------------------|-----------------------------------|
