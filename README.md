@@ -23,18 +23,14 @@ Ce répertoire GIT suit la structure suivante:
 
 ```dir
 │   generate_dataset.py
+│   maxsat_solver_evaluation.ipynb
 │   part1_gurobi_2_criteres.ipynb
-│   part2_sat.ipynb
+│   part2_maxsat_k_classes.py
+│   part2_sat_k_classes.py
 │   README.md
-│
-├───gophersat
-│       gophersat-1.1.6.exe
-│
-└───graphs
-        gurobi_duration_students.png
-        gurobi_duration_subjects.png
-        gurobi_perf_students.png
-        gurobi_perf_subjects.png
+│   sat_solver_evaluation.ipynb
+└───gophersat
+       gophersat-1.1.6.exe
 ```
 
 **`./gophersat/gophersat-1.1.6.exe` is where the gophersat solver is located**
@@ -43,7 +39,13 @@ Ce répertoire GIT suit la structure suivante:
 
 `part1_gurobi_2_criteres.ipynb` Résolution et évaluation des performance d'un modèle MR-Sort. Vous pouvez exécuter le notebook entier, la dernière partie est assez longue car elle calcule les performances du modèle sur divers datasets.
 
-`part2_sat.ipynb` Résolution d'un modèle NCS. Vous pouvez exécuter le notebook entier.
+`part2_sat_k_classes.py` Résolution d'un`problème avec modèle NCS.
+
+`sat_solver_evaluation.ipynb` Evaluation du modèle NCS avec solveur SAT.
+
+`part2_maxsat_k_classes.py` Résolution d'un problème avec modèle NCS à l'aide d'un solveur MaxSat.
+
+`maxsat_solver_evaluation.ipynb` Evaluation du modèle NCS avec solveur MaxSat.
 
 `/graphs` Stockage statique des graphes.
 
@@ -54,6 +56,8 @@ Ce répertoire GIT suit la structure suivante:
 - numpy
 - plotly (Dataviz)
 - kaleido (Export statique des graphes)
+- sklearn (Calcul des matrices de confusion)
+- numpy
 
 # Résultats MR-Sort 
 
@@ -64,21 +68,21 @@ Ce répertoire GIT suit la structure suivante:
 
 
 
-# Résultats Solveur-Sat
+# Résultats NCS
 
 | Parameter      | Duration                              | Performance                       |
 |----------------|---------------------------------------|-----------------------------------|
 | Students count | ![](graphs/sat_duration_students.png) | ![](graphs/sat_perf_students.png) |
 | Subjects count | ![](graphs/sat_duration_subjects.png) | ![](graphs/sat_perf_subjects.png) |
 
-# Sensibilité au bruit
+# Sensibilité au bruit des modèles NCS et MR-SORT
 
 | Solveur MR-Sort                   | Solveur SAT                       |
 |-----------------------------------|-----------------------------------|
 | ![](graphs/gurobi_perf_noise.png) | ![](graphs/sat_perf_noise.png)    |
 
 
-# Solveur Maxat
+# Modèle NCS avec solveur MaxSat
 
 | Nombre de variables ignorée          | Performance                       |
 |--------------------------------------|-----------------------------------|
